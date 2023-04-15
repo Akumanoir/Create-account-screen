@@ -31,7 +31,14 @@ div#register {
     border: 5px solid var(--verde);
     margin: 5px;
     height: calc(100% - 10px);
-    width: 1200px;
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: width .5s;
+}
+
+#left_form {
+    display: block;
 }
 
 fieldset {
@@ -77,7 +84,7 @@ label {
     color: white;
 }
 
-div#submit_container {
+div.submit_container {
     text-align: center;
 }
 
@@ -96,7 +103,42 @@ div > input[type=submit]:hover {
 }
 
 div#image_placeholder {
-    background: green url('../images/pexels-rachel-claire-4857690.jpg') left bottom no-repeat;
-    width: calc(100% - 1200px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: green url('../images/pexels-marek-mucha-13339565.jpg') right center no-repeat fixed;
+    background-size: 50%;
+    width: 40%;
     height: 100%;
+    transition: width .5s;
+}
+
+.text_container {
+    /*border: 2px solid white;*/
+    width: 350px;
+    text-align: center;
+    color: white;
+}
+
+.rh_text_container > p {
+    line-height: 2em;
+}
+
+.rh_text_container > h1 {
+    font-size: 2.5em;
+}
+
+.right_button > input[type=submit] {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+.right_button > input[type=submit]:hover {
+    border: none;
+}
+
+#lf_text_container {
+    display: none;
 }

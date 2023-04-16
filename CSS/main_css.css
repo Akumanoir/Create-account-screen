@@ -37,8 +37,20 @@ div#register {
     transition: width .5s;
 }
 
+.teste #register {
+    width: 40%;
+    height: 100%;
+    background: url('../images/pexels-ricky-esquivel-1580173.jpg');
+    margin: 0px;
+    border: none;
+}
+
 #left_form {
     display: block;
+}
+
+.teste #left_form {
+    display: none;
 }
 
 fieldset {
@@ -114,6 +126,11 @@ div#image_placeholder {
     transition: width .5s;
 }
 
+.teste #image_placeholder {
+    width: 60%;
+    background: gray;
+}
+
 .text_container {
     /*border: 2px solid white;*/
     width: 350px;
@@ -141,4 +158,8 @@ div#image_placeholder {
 
 #lf_text_container {
     display: none;
+}
+
+.teste #lf_text_container {
+    display: block;
 }

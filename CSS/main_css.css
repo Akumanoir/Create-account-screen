@@ -19,6 +19,8 @@
 html, body, main {
     width: 100vw;
     height: 100vh;
+    min-width: 1118px;
+    min-height: 464px;
 }
 
 main {
